@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
 	        protected String doInBackground(String... urls) {
 	 
 	        	HttpClient httpClient = new DefaultHttpClient();
-	    		HttpGet httpGet = new HttpGet("");
+	    		HttpGet httpGet = new HttpGet("http");
 	    		StringBuffer result = new StringBuffer();
 	    		HttpResponse response;
 				try {
@@ -112,7 +112,7 @@ public class MainActivity extends Activity {
 		protected String doInBackground(String... params) {
 			// TODO Auto-generated method stub
 			  HttpClient httpclient = new DefaultHttpClient();
-			    HttpPost httppost = new HttpPost("");
+			    HttpPost httppost = new HttpPost("http");
 			    StringBuffer result = new StringBuffer();
 			    try {
 			        // Add your data
